@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbiology Study Guide</title>
+    <!-- Bootstrap 5 CSS Engine -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0f172a; /* Deep modern dark slate background */
+            color: #f1f5f9; /* Bright readable text */
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .hero-banner {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%);
+            border: 1px solid #3730a3;
+            border-radius: 20px;
+            padding: 50px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .micro-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        .micro-card:hover {
+            transform: translateY(-5px);
+            border-color: #06b6d4; /* Glowing cyan border on hover */
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About Me</a>
+
+    <!-- Professional Nav Bar -->
+    <nav class="navbar navbar-expand navbar-dark bg-black bg-opacity-50 border-bottom border-secondary py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="index.html">🔬 MicroBio Guide</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                <a class="nav-link text-white-50" href="about.html">About Me</a>
+            </div>
+        </div>
     </nav>
-    <h1>Welcome to My Home Page!</h1>
-    <p>This is page number one.</p>
+
+    <!-- Main Content Area -->
+    <div class="container my-5">
+        
+        <!-- Welcome Hero Section -->
+        <div class="hero-banner text-center mb-5">
+            <h1 class="display-4 fw-bold text-transparent bg-clip-text bg-gradient-to-r style" style="color: #22d3ee;">The Ultimate Microbiology Hub</h1>
+            <p class="lead text-white-70 max-w-2xl mx-auto mt-3">A fully interactive, cloud-hosted study guide designed to map out complex bacterial tracking, lab experiments, and lecture breakdowns.</p>
+            <a href="about.html" class="btn btn-info btn-lg rounded-pill px-4 mt-3 fw-bold text-dark">Explore Lab Modules</a>
+        </div>
+
+        <!-- Topic Categories Grid -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="p-4 micro-card">
+                    <h3 class="h5 fw-bold text-info">🧫 Bacterial Staining & Morphology</h3>
+                    <p class="text-white-50 mb-0">Dive deep into Gram staining methods, cell wall structural configurations, and identification workflows.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 micro-card">
+                    <h3 class="h5 fw-bold text-warning">🧬 Viral Replication Cycles</h3>
+                    <p class="text-white-50 mb-0">Tracking lytic vs. lysogenic pathing, viral envelope properties, and host cell interaction mechanics.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
